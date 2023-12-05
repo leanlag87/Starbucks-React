@@ -1,0 +1,38 @@
+.gallery {
+  background-color: #006241;
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery__imagen {
+  width: 85%;
+  margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .gallery__imagen {
+    width: 30%;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery {
+    justify-content: center;
+  }
+
+  .gallery__imagen {
+    width: 300px;
+    margin-top: 0;
+    margin-left: 25px;
+  }
+}

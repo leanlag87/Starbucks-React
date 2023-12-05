@@ -1,0 +1,112 @@
+.cards {
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cards__card {
+    background: #006241;
+    width: 85%;
+    margin-top: 45px;
+    color: #fff;
+    position: relative;
+    padding-bottom: 25px;
+  }
+  
+  .cards__card-img {
+    width: 100%;
+  }
+  
+  .cards__card-title span {
+    color: rgba(255, 255, 0, 0.685);
+  }
+  
+  .cards__card-boton {
+    color: #fff;
+    background: inherit;
+    border: 2px solid #fff;
+    padding: 5px 30px;
+    width: 120px;
+    font-size: 13px;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .cards__card-boton:hover {
+    background: rgba(255, 255, 0, 0.685);
+    color: #fff;
+    border: 2px solid rgba(255, 255, 0, 0.685);
+  }
+  
+  .cards__container-boton {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cards__container-boton a {
+    width: 100%;
+    margin: 7.5px 0 0;
+    text-align: center;
+  }
+  
+  .cards__card-text {
+    font-size: 14px;
+    margin: 7.5px 0 15px;
+  }
+  
+  .cards__card-container-text {
+    padding: 25px 15px;
+  }
+  
+  .cards__card-circulo {
+    background: yellow;
+    border-radius: 50%;
+    color: #000;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -25px;
+    top: -25px;
+  }
+
+  @media (min-width: 768px) {
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+    
+      .cards__card {
+        width: 40%;
+      }
+  }
+
+  @media (min-width: 1024px) {
+    .cards__card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 350px;
+        height: 450px;
+        margin: 25px 50px;
+      }
+    
+      .cards__card-boton {
+        flex-direction: row;
+      }
+    
+      .cards__card-boton a {
+        margin-left: 7.5px;
+      }
+  }

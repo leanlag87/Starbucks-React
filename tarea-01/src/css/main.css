@@ -1,0 +1,63 @@
+/*Estilos para el main */
+
+.main {
+    margin-top: 80px;
+    padding: 15px 15px 60px;
+  }
+  
+  .main__title {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+  
+  .main__title span {
+    color: #006241;
+  }
+  
+  .main__text {
+    font-weight: bolder;
+    margin-top: 20px;
+  }
+  
+  .main__container-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main__container-logo {
+    display: none;
+  }
+
+  @media (min-width: 768px) {   
+    .main {
+        display: flex;
+        padding: 15px 30px 60px;
+      }
+    
+      .main__container-logo {
+        display: block;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .main__container-text {
+        width: 50%;
+      }
+    
+      .main__logo {
+        width: 80%;
+      }
+
+  }
+
+  @media (min-width: 1024px) {
+    .main {
+      display: flex;
+      padding: 15px 100px 60px;
+    }
+  
+    .main__logo {
+      width: 350px;
+    }
+}
